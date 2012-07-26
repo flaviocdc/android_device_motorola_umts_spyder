@@ -120,6 +120,10 @@ class EdifyGenerator(object):
     self.script.append('package_extract_file("system/etc/releaseutils/finalize_release", "/tmp/finalize_release");')
     self.script.append('set_perm(0, 0, 0777, "/tmp/finalize_release");')
     self.script.append('run_program("/tmp/finalize_release");')
+  
+  def BusyboxMount(self, partition):
+    self.script.append(('run_program("/sbin/busybox", "mount", "%s");' % partition))
+    self.mounts.add(partition)
 
   def ShowProgress(self, frac, dur):
     """Update the progress bar, advancing it over 'frac' over the next

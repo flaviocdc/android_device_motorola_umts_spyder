@@ -427,12 +427,12 @@ def WriteFullOTAPackage(input_zip, output_zip):
   script.Mount("/cache");
   script.DeleteRecursive("/cache");
   script.Print("Wiping dalvik-cache...")
-  script.Mount("/data")  
+  script.BusyboxMount("/data")  
   script.DeleteRecursive("/data/dalvik-cache")
 
 #  script.RunFormatAndTuneSystem()
   script.Print("Mounting your system...")
-  script.Mount("/system")
+  script.BusyboxMount("/system")
   script.Print("Deleting old system files...")
   script.DeleteRecursive("/system")
   script.Print("Starting Installation...")
@@ -467,7 +467,7 @@ def WriteFullOTAPackage(input_zip, output_zip):
   if OPTIONS.modelidcfg:
     script.RunConfig("")
 
-  script.Mount("/system")
+  script.BusyboxMount("/system")
   script.RunFinalReleaseUtils()
 
   script.ShowProgress(0.2, 10)

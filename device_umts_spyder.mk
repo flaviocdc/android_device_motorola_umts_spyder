@@ -96,16 +96,16 @@ PRODUCT_COPY_FILES += \
 
 # Rootfs files
 PRODUCT_COPY_FILES += \
-    out/target/product/umts_spyder/root/init:system/etc/rootfs/init \
-    out/target/product/umts_spyder/root/sbin/adbd:system/etc/rootfs/sbin/adbd \
-    device/motorola/umts_spyder/root/default.prop:system/etc/rootfs/default.prop \
-    device/motorola/umts_spyder/root/init.rc:system/etc/rootfs/init.rc \
-    device/motorola/umts_spyder/root/init.mapphone_cdma.rc:system/etc/rootfs/init.mapphone_cdma.rc \
-    device/motorola/umts_spyder/root/init.mapphone_umts.rc:system/etc/rootfs/init.mapphone_umts.rc \
-    device/motorola/umts_spyder/root/usbcheck.sh:system/etc/rootfs/usbcheck.sh \
-    device/motorola/umts_spyder/root/ueventd.rc:system/etc/rootfs/ueventd.rc \
-    device/motorola/umts_spyder/root/ueventd.mapphone_cdma.rc:system/etc/rootfs/ueventd.mapphone_cdma.rc \
-    device/motorola/umts_spyder/root/ueventd.mapphone_umts.rc:system/etc/rootfs/ueventd.mapphone_umts.rc \
+    out/target/product/umts_spyder/root/init:system/etc/rootfs2/init \
+    out/target/product/umts_spyder/root/sbin/adbd:system/etc/rootfs2/sbin/adbd \
+    device/motorola/umts_spyder/root/default.prop:system/etc/rootfs2/default.prop \
+    device/motorola/umts_spyder/root/init.rc:system/etc/rootfs2/init.rc \
+    device/motorola/umts_spyder/root/init.mapphone_cdma.rc:system/etc/rootfs2/init.mapphone_cdma.rc \
+    device/motorola/umts_spyder/root/init.mapphone_umts.rc:system/etc/rootfs2/init.mapphone_umts.rc \
+    device/motorola/umts_spyder/root/usbcheck.sh:system/etc/rootfs2/usbcheck.sh \
+    device/motorola/umts_spyder/root/ueventd.rc:system/etc/rootfs2/ueventd.rc \
+    device/motorola/umts_spyder/root/ueventd.mapphone_cdma.rc:system/etc/rootfs2/ueventd.mapphone_cdma.rc \
+    device/motorola/umts_spyder/root/ueventd.mapphone_umts.rc:system/etc/rootfs2/ueventd.mapphone_umts.rc \
 
 # Hijack files
 PRODUCT_COPY_FILES += \
